@@ -1,0 +1,430 @@
+/* 編輯器內容 */
+.editor-box {
+    line-height: 1.8;
+    color: #4B4B4B;
+    font-size: 17px;
+    letter-spacing: 1.3px;
+}
+
+.editor-box img {
+    max-width: 100%;
+    display: block;
+    margin: 30px auto;
+}
+
+/* 最新消息 */
+.nb {
+    margin-bottom: 25px;
+}
+
+.nb:hover .nb-pic {
+    transform: scale(1.1);
+}
+
+.nbp-box {
+    width: 100%;
+    height: 0;
+    padding-bottom: 62%;
+    overflow: hidden;
+}
+
+.nb-pic {
+    width: 100%;
+    height: 0;
+    padding-bottom: 62%;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    transition: 0.3s;
+}
+
+.nb-title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 22px;
+    letter-spacing: 1.5px;
+    color: #D4B265;
+    margin-top: 15px;
+    margin-bottom: 8px;
+}
+
+.nb-date {
+    text-align: center;
+    color: #AEAEAE;
+}
+
+.nc-box {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.nc-title {
+    text-align: center;
+    color: #D4B265;
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+.nc-box .btn-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.nc-box .btn-box button {
+    border: 1px solid #D4B265;
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+.nc-box .btn-box button a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 10px 20px;
+    color: #D4B265;
+    line-height: 1.5;
+}
+
+.nc-box .btn-box button a img {
+    width: 20px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.nc-box .btn-box button.new-next a img {
+    transform: scale(-1);
+}
+
+.nc-box .btn-box button a span {
+    font-size: 17px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.nc-box .back-new {
+    background-color: #D4B265;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: -150px;
+}
+
+.nc-box .back-new a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 10px 20px;
+    color: #fff;
+    line-height: 1.5;
+}
+
+.nc-box .back-new a img {
+    width: 20px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.nc-box .back-new a span {
+    font-size: 17px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+main {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* 分類 */
+.classify {
+    padding: 0;
+    overflow-x:scroll;
+    width: 100%;
+    white-space: nowrap;
+    padding: 15px;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+
+.classify::-webkit-scrollbar {
+    height: 5px;
+    background-color: transparent;
+}
+
+.classify::-webkit-scrollbar-thumb {
+    height: 5px;
+    background-color: #F5EDD9;
+    border-radius: 100px;
+}
+
+.classify li {
+    color: #939393;
+    padding: 7px 22px;
+    border: 1px solid #939393;
+    border-radius: 100px;
+    font-size: 14px;
+    display: inline;
+    margin-right: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.classify li:hover {
+    color: #fff;
+    background-color: #D4B265;
+    border-color: #D4B265;
+}
+
+.classify li.active {
+    color: #fff;
+    background-color: #D4B265;
+    border-color: #D4B265;
+}
+
+/* 廳房、空間 */
+.room-slider {
+    padding-right: 20px;
+}
+#room {
+    width: 100%;
+    height: 0;
+    padding-bottom: 73%;
+    position: relative;
+}
+
+#room .swiper-wrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+#room .swiper-slide {
+    width: 100%;
+    height: 0;
+    padding-bottom: 62%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+#room .swiper-slide >img {
+    display: none;
+}
+
+#room .swiper-slide .magn {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #fff;
+    cursor: pointer;
+    padding-top: 6px;
+    padding-left: 7px;
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+}
+
+#room .swiper-slide .magn img {
+    width: 20px;
+    display: block;
+}
+
+.room-title {
+    font-size: 30px;
+    color: #D4B265;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+#roomModal .modal-content {
+    width: 100%;
+    /* height: 90vh; */
+}
+
+#roomModal .modal-content img {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.close-btn {
+    width: 35px;
+    height: 35px;
+    background-color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: -50px;
+}
+
+.close-btn img {
+    width: 15px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* swiper */
+.swiper-pagination-bullet {
+    opacity: 1;
+    border: 1px solid #D4B265;
+    background: transparent;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #D4B265;
+}
+
+/* 婚禮籌劃、尾牙春酒 */
+.ib-box {
+    width: 100%;
+    height: 0;
+    padding-bottom: 62%;
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.ib-box>div {
+    position: absolute;
+}
+
+.ib-box .ib-pic {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    top: 0;
+    left: 0;
+}
+
+.ib-box .bg-box {
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+} 
+
+.ib-box .hover-box {
+    width: 100%;
+    /* height: 100%; */
+    height: 0;
+    background-color: #D4B265;
+    opacity: 0.9;
+    left: 0;
+    bottom: 0;
+    transition: 0.3s;
+} 
+
+.ib-box:hover .hover-box {
+    height: 100%;
+}
+
+.ib-box .text {
+    width: 90%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+}
+
+.ib-box .text .intr-title {
+    font-size: 22px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.ib-box .text .intr-content {
+    font-size: 16px;
+    text-align: center;
+}
+
+#introModal .modal-content {
+    padding: 30px 20px;
+    border-radius: 20px;
+}
+
+#introModal .modal-content .pop-title {
+    text-align: center;
+    font-size: 30px;
+    color: #D4B265;
+    font-weight: 900;
+    margin-bottom: 30px;
+}
+
+/* 373cafe */
+.cafe-title {
+    text-align: center;
+    font-size: 30px;
+    color: #D4B265;
+    font-weight: 900;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 1025px) {
+    .nc-box .back-new {
+        position: static;
+        display: inline-block;
+    }
+}
+
+@media (max-width: 768px) {
+    .room-slider {
+        padding-right: calc(var(--bs-gutter-x)/ 2);
+    }
+    .room-title {
+        text-align: center;
+    }
+}
+
+@media (max-width: 576px) {
+    #roomModal .close-btn {
+        display: none;
+    }
+    .modal-dialog {
+        margin: 5rem auto;
+    }
+}
+
+@media (max-width: 414px) {
+    #room {
+        padding-bottom: 77%;
+    }
+}
+
+@media (max-width: 400px) {
+    .nc-box .btn-box{
+        flex-direction: column;
+    }
+    .nc-box .btn-box button {
+        margin: 10px auto;
+    }
+    .nc-box .back-new {
+        position: static;
+        display: block;
+        margin: 30px auto 20px;
+        text-align: center;
+    }
+}
+
+@media (min-width: 576px) {
+    .modal-dialog {
+        max-width: 80%;
+        margin: 3rem auto;
+    }
+}
