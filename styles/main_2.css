@@ -1233,7 +1233,7 @@
 
 	padding: 0;
 
-	margin-right: 3px; 
+	margin-right: 5px; 
 
 	cursor: pointer;
 
@@ -1249,25 +1249,28 @@
 
 	display: inline-block;	
 
-	padding: 2px 20px;
-
 	user-select: none;
 
 	border-radius:50px; 
 
-	color: rgb(74, 74, 74);
-
-	background-color: rgb(201, 201, 201);
-
-	text-shadow: rgb(224, 224, 224) 1px 1px 0px;
+	padding: 7px 22px;
+	background-color: transparent;
+    border: 1px solid #939393;
+    color: #939393;
+	transition: 0.3s;
 
 }
 
+.news_typesBar input[type=checkbox]+span:hover {
+	color: #fff;
+    background-color: #D4B265;
+    border-color: #D4B265;
+}
+
 .news_typesBar input[type=checkbox]:checked+span {
-
-   color: #d2b465;
-
-   background-color: #000; 
+	color: #fff;
+    background-color: #D4B265;
+    border-color: #D4B265;
 
 }
 

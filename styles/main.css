@@ -191,9 +191,11 @@ img.pic1 {
 
   height: calc(100vh - 70px);
 
-  background-size: cover;
+  background-size: contain;
 
-  background-position: center;
+  background-repeat: no-repeat;
+
+  background-position: center center;
 }
 
 @media (max-width: 1025px) {
@@ -1051,7 +1053,7 @@ footer a:hover {
 }
 
 .content {
-  width: 80%;
+  width: 90%;
 
   margin: 0 auto;
 
@@ -1062,10 +1064,19 @@ footer a:hover {
   flex-wrap: wrap;
 }
 
+.boxA {
+  width: 40%;
+}
+
 .boxB {
   display: flex;
-  width: 100%;
+  /* width: 100%; */
   margin-bottom: 30px;
+  width: 40%;
+}
+
+.boxC {
+  width: 20%;
 }
 
 .boxA > div,
